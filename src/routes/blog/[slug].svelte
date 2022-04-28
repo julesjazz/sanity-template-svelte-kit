@@ -20,7 +20,7 @@
 </script>
 
 <script>
-  import PortableText from '@portabletext/svelte'
+  import {PortableText} from '@portabletext/svelte'
   import Code from '$lib/Code.svelte'
   import Link from '$lib/Link.svelte'
   import ImageBlock from '$lib/ImageBlock.svelte'
@@ -55,8 +55,8 @@
 {/if}
 
 <PortableText
-  blocks={post.body}
-  serializers={{
+  value={post.body}
+  components={{
     types: {
       code: Code,
       image: ImageBlock,

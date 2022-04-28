@@ -4,8 +4,8 @@
     "name": "<#< sanity.projectTitle >#>"
   },
   "api": {
-    "projectId": "<#< sanity.projectId >#>",
-    "dataset": "<#< sanity.dataset >#>"
+    "projectId": "a3cpk9am",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",

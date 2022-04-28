@@ -22,7 +22,7 @@
 </script>
 
 <script>
-  import PortableText from '@portabletext/svelte'
+  import {PortableText} from '@portabletext/svelte'
   import Code from '$lib/Code.svelte'
   import Link from '$lib/Link.svelte'
   import ImageBlock from '$lib/ImageBlock.svelte'
@@ -41,8 +41,8 @@
 
 {#if author?.bio}
   <PortableText
-    blocks={author.bio}
-    serializers={{
+    value={author.bio}
+    components={{
       types: {
         code: Code,
         image: ImageBlock,
